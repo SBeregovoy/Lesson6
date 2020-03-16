@@ -113,7 +113,7 @@ namespace Lesson6
         /// </summary>
         public static void Task13()
         {
-            int[] m = new int[] { 11, 22, 31, 4, 53, 6, 7, 81, 90};
+            int[] m = new int[] { 11, 22, 32, 4, 53, 6, 7, 83, 90};
         }
     }
 }
