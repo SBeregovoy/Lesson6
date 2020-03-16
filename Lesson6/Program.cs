@@ -30,7 +30,7 @@ namespace Lesson6
         /// </summary>
         public static void Task3()
         {
-            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6 };
+            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6, 7};
         }
 
         /// <summary>
