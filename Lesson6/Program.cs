@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task6();
+            Task7();
         }
 
         /// <summary>
@@ -173,6 +173,12 @@ namespace Lesson6
         public static void Task7()
         {
             int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6 };
+            int[] b = new int[a.Length];
+            for (int i = 0; i < a.Length; i++)
+            {
+                b[b.Length - i - 1] = a[i];
+            }
+
         }
 
         /// <summary>
