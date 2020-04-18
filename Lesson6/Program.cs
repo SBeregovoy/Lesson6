@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task1();
+            Task2();
         }
 
         /// <summary>
@@ -32,7 +32,31 @@ namespace Lesson6
         /// </summary>
         public static void Task2()
         {
-            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6 };
+            int[] a = new int[] { 500, 120, 130, 2, 1000, 9, 15, 19, 6 };
+            
+            int max = a[0];
+            int max2 = a[1];
+            if (max2 > max)
+            {
+                max = max2;
+                max2 = a[0];
+            }
+            for (int i = 2; i < a.Length; i++)
+            {
+                if (max < a[i])
+                {
+                    max2 = max;
+                    max = a[i];
+                }
+                
+                if(max2 < a[i] && a[i]!=max)
+                {
+                    max2 = a[i];
+                }
+            }
+
+            Console.WriteLine(max);
+            Console.WriteLine(max2);
         }
 
         /// <summary>
