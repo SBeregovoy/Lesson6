@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task5();
+            Task6();
         }
 
         /// <summary>
@@ -144,7 +144,27 @@ namespace Lesson6
         /// </summary>
         public static void Task6()
         {
-            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6};
+            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 111, 19, 6};
+            bool result = false;
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                for (int j = i+1; j < a.Length; j++)
+                {
+                    if (a[i] == a[j])
+                    {
+                        result = true;
+                        break;
+                    }
+                }
+                
+                if (result)
+                {
+                    break;
+                }
+            }
+
+            Console.WriteLine(result);
         }
 
         /// <summary>
