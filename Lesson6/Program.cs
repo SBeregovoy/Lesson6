@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task11();
+            Task12();
         }
 
         /// <summary>
@@ -271,6 +271,33 @@ namespace Lesson6
         {
             //подсказка: для определения остка от деления используется оператор %
             int ostatok = 4 % 2; //будет равен нулю
+
+            int result = 0;
+
+            Random rnd = new Random();
+
+            int size = 10;
+            int[,] m = new int[size, size];
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    int r = rnd.Next(1, 100);//случайное число от 1 до 100
+
+                    m[i, j] = r;
+
+                    if(r % 2 == 0)
+                    {
+                        result++;
+                    }
+
+                    Console.Write($"{m[i, j]}\t");
+                }
+                Console.WriteLine();
+            }
+
+            Console.WriteLine(result);
         }
 
         /// <summary>
