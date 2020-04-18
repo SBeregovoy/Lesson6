@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            
+            Task1();
         }
 
         /// <summary>
@@ -14,7 +14,17 @@ namespace Lesson6
         /// </summary>
         public static void Task1()
         {
-            int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6 };
+            int[] a = new int[] { 100, 12, 13, 2, 3, 9, 15, 19, 6 };
+            int min = a[0];
+            for (int i = 1; i < a.Length; i++)
+            {
+                if (min > a[i])
+                {
+                    min = a[i];
+                }
+            }
+
+            Console.WriteLine(min);
         }
 
         /// <summary>
