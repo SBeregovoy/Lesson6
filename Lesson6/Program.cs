@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task3();
+            Task4();
         }
 
         /// <summary>
@@ -114,7 +114,12 @@ namespace Lesson6
         /// </summary>
         public static void Task4()
         {
-
+            int[] a = new int[100];
+            for (int i = 1; i <= 100; i++)
+            {
+                a[i-1] = i;
+            }
+            
         }
 
         /// <summary>
