@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task9();
+            Task10();
         }
 
         /// <summary>
@@ -221,6 +221,22 @@ namespace Lesson6
         /// </summary>
         public static void Task10()
         {
+            Random rnd = new Random();
+
+            int size = 10;
+            int[,] m = new int[size, size];
+
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    int r = rnd.Next(1, 100);//случайное число от 1 до 10
+
+                    m[i, j] = r;
+                    Console.Write($"{m[i,j]}\t");
+                }
+                Console.WriteLine();
+            }
         }
 
         /// <summary>
