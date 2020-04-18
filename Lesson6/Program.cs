@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task10();
+            Task11();
         }
 
         /// <summary>
@@ -245,6 +245,22 @@ namespace Lesson6
         public static void Task11()
         {
             int[,] m = new int[,] { { 11, 22, 31 }, { 4, 53, 6 }, { 7, 81, 90 } };
+            int[] a = new int[m.Length];
+            
+            int sum = 0;
+            int columns = m.GetUpperBound(0) + 1;
+            int rows = m.Length / columns;
+
+            int k = 0;
+            for (int i = 0; i < columns; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                   a[k] = m[i, j];
+                    k++;
+                }
+            }
+
         }
 
 
