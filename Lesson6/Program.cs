@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task8();
+            Task9();
         }
 
         /// <summary>
@@ -202,6 +202,18 @@ namespace Lesson6
         public static void Task9()
         {
             int[,] m = new int[,] { { 11, 22, 31 }, { 4, 53, 6 }, { 7, 81, 90 } };
+            int sum = 0;
+            int columns = m.GetUpperBound(0)+1;
+            int rows = m.Length / columns;
+
+            for (int i = 0; i < columns; i++)
+            {
+                for (int j = 0; j < rows; j++)
+                {
+                    sum = sum + m[i, j];
+                }
+            }
+            Console.WriteLine(sum);
         }
 
         /// <summary>
