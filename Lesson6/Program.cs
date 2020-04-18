@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task2v2();
+            Task3();
         }
 
         /// <summary>
@@ -101,6 +101,12 @@ namespace Lesson6
         public static void Task3()
         {
             int[] a = new int[] { 5, 12, 13, 2, 1, 9, 15, 19, 6, 7};
+            long sum = 0;
+            for (int i = 0; i < a.Length; i++)
+            {
+                sum = sum + a[i];//sum+=a[i];
+            }
+            Console.WriteLine(sum);
         }
 
         /// <summary>
