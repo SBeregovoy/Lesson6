@@ -6,7 +6,7 @@ namespace Lesson6
     {
         static void Main(string[] args)
         {
-            Task4();
+            Task5();
         }
 
         /// <summary>
@@ -129,7 +129,14 @@ namespace Lesson6
         {
             //пример вызова генератора случайных чисел, он понадобится в данной задаче
             Random rnd = new Random();
-            int r = rnd.Next(1,10);//случайное число от 1 до 10
+            
+            int[] a = new int[100];
+            for (int i = 0; i < 100; i++)
+            {
+                int r = rnd.Next(1, 10);//случайное число от 1 до 10
+
+                a[i] = r;
+            }
         }
 
         /// <summary>
